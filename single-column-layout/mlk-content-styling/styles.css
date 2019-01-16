@@ -19,27 +19,48 @@ button {
 }
 
 h1 {
-	font-size: 35px;
+	font-size: 40px;
 	text-transform: uppercase;
 	margin-bottom: 10vh;
+	color: #494031;
+}
+
+@media only screen and (min-width: 768px) {
+	h1 {
+		font-size: 60px;
+		line-height: 70px;
+	}
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 35px;
 	text-transform: uppercase;
-	margin-top: 10vh;
+	text-align: center;
+	margin-top: 15vh;
 	margin-bottom: 2vh;
 	padding: 5%;
 	color: #494031;
+}
+
+@media only screen and (min-width: 768px) {
+	h2 {
+		font-size: 45px;
+	}
 }
 
 h3 {
 	font-size: 25px;
 	text-transform: uppercase;
-	margin-top: 10vh;
-	margin-bottom: 2vh;
+	margin-top: 5vh;
+	margin-bottom: 1vh;
 	padding: 5%;
 	color: #494031;
+}
+
+@media only screen and (min-width: 768px) {
+	h3 {
+		font-size: 35px;
+	}
 }
 
 strong {
@@ -66,6 +87,13 @@ p {
 	font-size: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+	p {
+		font-size: 25px;
+		line-height: 38px;
+	}
+}
+
 blockquote p:first-child::before {
 	content: "'' ";
 }
@@ -78,6 +106,14 @@ blockquote > p {
 	font-size: 15px;
 	line-height: 22px;
 	color: #c46400;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	blockquote > p {
+		font-size: 25px;
+		line-height: 32px;
+	}
 }
 
 blockquote {
@@ -87,4 +123,19 @@ blockquote {
 ul {
 	padding: 3vh;
 	color: #c46400;
+	transition: font-size line-height ease;
+	will-change: font-size line-height;
+}
+
+@media only screen and (min-width: 768px) {
+	ul {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+
+	}
 }
